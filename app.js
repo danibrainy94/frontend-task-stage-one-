@@ -1,10 +1,24 @@
 const currenTime = document.getElementsByClassName('.current-time')
 
-currenTime.textContent = 
+// currenTime.textContent = toMilliSeconds;
 
-function toMilliSeconds (hours, minutes, seconds) {
-    const secondsToMilliseconds = seconds * 1000;
-    const minutesToMilliseconds = minutes* 60 * 1000;
-    const hoursToMilliseconds = hours * 60 * 60 * 1000;
-    return secondsToMilliseconds + minutesToMilliseconds + hoursToMilliseconds;
+
+const presentTime = new Date;
+
+// const hours = presentTime.getUTCHours();
+// const minutes = presentTime.getUTCMinutes();
+// const Seconds = presentTime.getUTCSeconds();
+// const Milliseconds = presentTime.getUTCSeconds();
+
+
+function toMilliSeconds (hours, minutes, seconds, milliseconds) {
+    let milliSecToHours = hours * 60 * 60 * 1000;
+    let milliSecToMinutes = minutes * 60 * 1000;
+    let milliSecToSeconds = seconds * 1000 ;
+
+    return result = milliSecToHours + milliSecToMinutes + milliSecToSeconds + milliseconds;
 }
+
+console.log(toMilliSeconds(presentTime.getUTCHours(), presentTime.getUTCMinutes(), ));
+
+// console.log(toMilliSeconds(presentTime.getUTCHours(), presentTime.getUTCMinutes(), presentTime.getUTCSeconds(), presentTime.getUTCMilliseconds())));

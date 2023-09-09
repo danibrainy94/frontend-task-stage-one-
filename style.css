@@ -19,7 +19,7 @@ h2 {
 }
 
 p,
-button {
+a {
     color: #3C3041;
     font-weight: 600;
 }
@@ -50,6 +50,11 @@ button {
     
 }
 
+a {
+    text-decoration: none;
+    color: 
+}
+
 button {
     margin: ;
     width: 160px;
@@ -58,13 +63,14 @@ button {
     border: 1px solid;
     margin: 1em;
     background-color: #ffffff;
+    transition: all .8s ease;
 }
 
 button:hover {
-    color: #ffffff;
-    background-color: #3C3041;
-    border: 2px solid #ffffff;
+    transform: scale(1.1);
 }
+
+
 
 button:active {
     transform: translateY(2px);

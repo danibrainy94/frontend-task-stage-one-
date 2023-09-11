@@ -9,5 +9,5 @@ function updateTime() {
 }
 
 // Run updateTime() every second
-setInterval(updateTime, 1000); 
+setInterval(updateTime, 100); 
 

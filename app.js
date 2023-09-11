@@ -5,7 +5,7 @@ const currentTime = document.querySelector('.current-time');
 function updateTime() {
     let realTime = new Date();
     let currentTimeMilliseconds = realTime.getTime();
-    currentTime.textContent = currentTimeMilliseconds;
+    currentTime.textContent = `UTC Time: ${currentTimeMilliseconds}`;
 }
 
 // Run updateTime() every second

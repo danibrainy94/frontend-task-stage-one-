@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <div>
 
-        <section class="profile-container">
-            <!-- slack display picture -->
-            <img src="/display-img.jpg" alt="danibrainy" data-testid="slackDisplayImage">
-            <!-- slack name -->
-            <h1 data-testid="slackUserName">danibrainy</h1>
-            <!-- track -->
-            <h2 data-testid="myTrack">Frontend</h2>
-            <!-- link to my github repository -->
-            <button><a href="https://github.com/danibrainy94/frontend-task-stage-one-" data-testid="githubURL">My Github</a></button>
-            <!-- day and time -->
-            <div class="day-time-container">
-                <p data-testid="currentDayOfTheWeek">Monday</p>
-                <p class="current-time" data-testid="currentUTCTime"></p>
-            </div>
-        </section>
+        <!-- slack display picture -->
+        <img src="/display-img.jpg" alt="danibrainy" data-testid="slackDisplayImage">
 
-    </main>
+        <!-- slack name -->
+        <h1 data-testid="slackUserName">danibrainy</h1>
+
+        <!-- track -->
+        <h2 data-testid="myTrack">Frontend</h2>
+
+        <!-- link to my github repository -->
+        <a href="https://github.com/danibrainy94/frontend-task-stage-one-" data-testid="githubURL">My Github</a>
+
+        <!-- present day of the week -->
+        <p data-testid="currentDayOfTheWeek">Monday</p>
+
+        <!-- UTC Time -->
+        <p class="current-time" data-testid="currentUTCTime"></p>
+    
+    </div>
 
     <script src="app.js"></script>
 </body>

@@ -1,10 +1,20 @@
-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+div {
+    background-color: #2D2334;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-top: 1em;
+}
 
 h1 {
     color: #ffffff;
@@ -18,60 +28,22 @@ h2 {
     font-size: 1.8em;
 }
 
-p,
-a {
-    color: #3C3041;
-    font-weight: 600;
-}
-
-.profile-container {
-    background-color: #2D2334;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 80vh;
-    border-radius: 10px;
-}
-
-img {
-    width: 350px;
-    height: 350px;
-    border-radius: 30%;
-    object-fit: cover;
-    
-    
-}
-
 a {
     text-decoration: none;
-}
-
-button {
-    width: 160px;
-    height: 35px;
-    border-radius: 15px;
-    border: 1px solid;
-    margin: 1em;
     background-color: #ffffff;
-    transition: all .8s ease;
+    color: #3C3041;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: .5em 2em;
+    transition: 1s  al ease;
 }
 
-button:hover {
-    transform: scale(1.1);
-}
-
-button:active {
+a:active {
+    color: #ffffff;
+    background-color: #3C3041;
     transform: translateY(2px);
 }
 
-.day-time-container {
-    width: 200px;
-    border-radius: 8px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 .5em;
-
+p {
+    color: #ffffff;
 }
